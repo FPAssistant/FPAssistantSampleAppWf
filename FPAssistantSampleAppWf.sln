@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPAssistantSampleAppWf", "FPAssistantSampleAppWf\FPAssistantSampleAppWf.csproj", "{977C8692-A0CB-43D7-B8B8-59C6D74E1BFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{977C8692-A0CB-43D7-B8B8-59C6D74E1BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977C8692-A0CB-43D7-B8B8-59C6D74E1BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977C8692-A0CB-43D7-B8B8-59C6D74E1BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977C8692-A0CB-43D7-B8B8-59C6D74E1BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF75CF22-174B-4E48-AE3C-CDEFF8D55056}
+	EndGlobalSection
+EndGlobal
