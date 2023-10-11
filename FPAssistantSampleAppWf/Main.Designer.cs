@@ -31,15 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             menuStrip1 = new MenuStrip();
             GeneralToolStripMenuItem = new ToolStripMenuItem();
+            conversionsToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
             AboutToolStripMenuItem = new ToolStripMenuItem();
-            conversionsToolStripMenuItem = new ToolStripMenuItem();
+            iCAOToolStripMenuItem = new ToolStripMenuItem();
+            BasicILSToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { GeneralToolStripMenuItem, helpToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { GeneralToolStripMenuItem, iCAOToolStripMenuItem, helpToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -52,6 +54,13 @@
             GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem";
             GeneralToolStripMenuItem.Size = new Size(46, 20);
             GeneralToolStripMenuItem.Text = "Tools";
+            // 
+            // conversionsToolStripMenuItem
+            // 
+            conversionsToolStripMenuItem.Name = "conversionsToolStripMenuItem";
+            conversionsToolStripMenuItem.Size = new Size(180, 22);
+            conversionsToolStripMenuItem.Text = "Conversions";
+            conversionsToolStripMenuItem.Click += ConversionsToolStripMenuItem_Click;
             // 
             // helpToolStripMenuItem
             // 
@@ -67,12 +76,19 @@
             AboutToolStripMenuItem.Text = "About";
             AboutToolStripMenuItem.Click += AboutToolStripMenuItem_Click;
             // 
-            // conversionsToolStripMenuItem
+            // iCAOToolStripMenuItem
             // 
-            conversionsToolStripMenuItem.Name = "conversionsToolStripMenuItem";
-            conversionsToolStripMenuItem.Size = new Size(180, 22);
-            conversionsToolStripMenuItem.Text = "Conversions";
-            conversionsToolStripMenuItem.Click += ConversionsToolStripMenuItem_Click;
+            iCAOToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { BasicILSToolStripMenuItem });
+            iCAOToolStripMenuItem.Name = "iCAOToolStripMenuItem";
+            iCAOToolStripMenuItem.Size = new Size(47, 20);
+            iCAOToolStripMenuItem.Text = "ICAO";
+            // 
+            // BasicILSToolStripMenuItem
+            // 
+            BasicILSToolStripMenuItem.Name = "BasicILSToolStripMenuItem";
+            BasicILSToolStripMenuItem.Size = new Size(180, 22);
+            BasicILSToolStripMenuItem.Text = "Basic ILS";
+            BasicILSToolStripMenuItem.Click += BasicILSToolStripMenuItem_Click;
             // 
             // Main
             // 
@@ -97,5 +113,7 @@
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem AboutToolStripMenuItem;
         private ToolStripMenuItem conversionsToolStripMenuItem;
+        private ToolStripMenuItem iCAOToolStripMenuItem;
+        private ToolStripMenuItem BasicILSToolStripMenuItem;
     }
 }

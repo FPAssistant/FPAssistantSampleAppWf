@@ -1,4 +1,5 @@
 using FPAssistantSampleAppWf.Forms.General;
+using FPAssistantSampleAppWf.Forms.Icao;
 
 namespace FPAssistantSampleAppWf
 {
@@ -17,8 +18,14 @@ namespace FPAssistantSampleAppWf
 
         private void ConversionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ConversionsForm conversionsForm = new ConversionsForm();
+            ConversionsForm conversionsForm = new();
             conversionsForm.Show();
+        }
+
+        private void BasicILSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BasicIlsForm basicIlsForm = new();
+            basicIlsForm.Show();
         }
     }
 }
