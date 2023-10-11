@@ -6,6 +6,20 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Copyright>CADology Limited</Copyright>
+    <PackageProjectUrl>http://api.fpassistant.com/api/index.html</PackageProjectUrl>
+    <PackageIcon>StoreLogo.scale-200.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FpAssistantCoreScl" Version="2023.4.26.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\StoreLogo.scale-200.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

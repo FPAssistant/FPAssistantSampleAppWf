@@ -28,12 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            menuStrip1 = new MenuStrip();
+            GeneralToolStripMenuItem = new ToolStripMenuItem();
+            helpToolStripMenuItem = new ToolStripMenuItem();
+            AboutToolStripMenuItem = new ToolStripMenuItem();
+            conversionsToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { GeneralToolStripMenuItem, helpToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // GeneralToolStripMenuItem
+            // 
+            GeneralToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { conversionsToolStripMenuItem });
+            GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem";
+            GeneralToolStripMenuItem.Size = new Size(46, 20);
+            GeneralToolStripMenuItem.Text = "Tools";
+            // 
+            // helpToolStripMenuItem
+            // 
+            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { AboutToolStripMenuItem });
+            helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            helpToolStripMenuItem.Size = new Size(44, 20);
+            helpToolStripMenuItem.Text = "Help";
+            // 
+            // AboutToolStripMenuItem
+            // 
+            AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
+            AboutToolStripMenuItem.Size = new Size(107, 22);
+            AboutToolStripMenuItem.Text = "About";
+            AboutToolStripMenuItem.Click += AboutToolStripMenuItem_Click;
+            // 
+            // conversionsToolStripMenuItem
+            // 
+            conversionsToolStripMenuItem.Name = "conversionsToolStripMenuItem";
+            conversionsToolStripMenuItem.Size = new Size(180, 22);
+            conversionsToolStripMenuItem.Text = "Conversions";
+            conversionsToolStripMenuItem.Click += ConversionsToolStripMenuItem_Click;
+            // 
+            // Main
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(menuStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = menuStrip1;
+            Name = "Main";
+            Text = "FPAssistant SDk Sample App";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem GeneralToolStripMenuItem;
+        private ToolStripMenuItem helpToolStripMenuItem;
+        private ToolStripMenuItem AboutToolStripMenuItem;
+        private ToolStripMenuItem conversionsToolStripMenuItem;
     }
 }
