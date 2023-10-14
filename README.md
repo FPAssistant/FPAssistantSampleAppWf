@@ -11,6 +11,7 @@ Features:
  - Geodetic calculations (Great Circle, Distance, Destination, etc)
  - UTM (WGS-84 & NAD83)  <-> Latitude/Longitude coordinate conversions
  - ICAO PANS-OPS Calculations (Doc 8168, Annex 14, Annex 5)
+ - ICAO Web API Data Service
  - FAA TERPS Calculations (8260)
  - RNP AR - ICAO Doc 9905 & FAA
  - Aerodrome Surfaces (FAA & ICAO)
