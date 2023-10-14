@@ -13,7 +13,7 @@ Features:
  - ICAO PANS-OPS Calculations (Doc 8168, Annex 14, Annex 5)
  - FAA TERPS Calculations (8260)
  - RNP AR - ICAO Doc 9905 & FAA
- - Aerodrome Surfaces
+ - Aerodrome Surfaces (FAA & ICAO)
  - NOTAMS
 
 SDK available to license for your own aviation software development
