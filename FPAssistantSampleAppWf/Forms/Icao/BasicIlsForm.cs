@@ -81,7 +81,7 @@ map.entities.push(polyline);";
                                   function GetMap()
                                   {
                                       var map = new Microsoft.Maps.Map('#myMap', {
-                                          credentials: 'P2iDzZSmcbjyOXbKpKpi~lv5pTdgXFmEfyczAEnzCgg~AprXWl9t71nA_08VW4FefTUQKVrlD4YVi0NyRPFG6_bVoLnDU-IsFhuB0ux6pPtC',
+                                          credentials: 'Your API key here',
                                           center: new Microsoft.Maps.Location(51.50632, -0.12714),
                                           mapTypeId: Microsoft.Maps.MapTypeId.aerial,
                                           zoom: 10
