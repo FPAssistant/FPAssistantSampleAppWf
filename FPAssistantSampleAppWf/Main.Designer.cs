@@ -32,16 +32,24 @@
             menuStrip1 = new MenuStrip();
             GeneralToolStripMenuItem = new ToolStripMenuItem();
             conversionsToolStripMenuItem = new ToolStripMenuItem();
-            helpToolStripMenuItem = new ToolStripMenuItem();
-            AboutToolStripMenuItem = new ToolStripMenuItem();
             iCAOToolStripMenuItem = new ToolStripMenuItem();
             BasicILSToolStripMenuItem = new ToolStripMenuItem();
+            helpToolStripMenuItem = new ToolStripMenuItem();
+            AboutToolStripMenuItem = new ToolStripMenuItem();
+            geodeticsToolStripMenuItem = new ToolStripMenuItem();
+            fAAToolStripMenuItem = new ToolStripMenuItem();
+            distanceToolStripMenuItem = new ToolStripMenuItem();
+            destinationToolStripMenuItem = new ToolStripMenuItem();
+            greatCircleToolStripMenuItem = new ToolStripMenuItem();
+            wGS84UTMToolStripMenuItem = new ToolStripMenuItem();
+            intersectionToolStripMenuItem = new ToolStripMenuItem();
+            airSpeedIndicatedToTrueToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { GeneralToolStripMenuItem, iCAOToolStripMenuItem, helpToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { GeneralToolStripMenuItem, iCAOToolStripMenuItem, geodeticsToolStripMenuItem, helpToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -50,7 +58,7 @@
             // 
             // GeneralToolStripMenuItem
             // 
-            GeneralToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { conversionsToolStripMenuItem });
+            GeneralToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { conversionsToolStripMenuItem, airSpeedIndicatedToTrueToolStripMenuItem });
             GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem";
             GeneralToolStripMenuItem.Size = new Size(46, 20);
             GeneralToolStripMenuItem.Text = "Tools";
@@ -58,9 +66,23 @@
             // conversionsToolStripMenuItem
             // 
             conversionsToolStripMenuItem.Name = "conversionsToolStripMenuItem";
-            conversionsToolStripMenuItem.Size = new Size(180, 22);
+            conversionsToolStripMenuItem.Size = new Size(223, 22);
             conversionsToolStripMenuItem.Text = "Conversions";
             conversionsToolStripMenuItem.Click += ConversionsToolStripMenuItem_Click;
+            // 
+            // iCAOToolStripMenuItem
+            // 
+            iCAOToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { BasicILSToolStripMenuItem });
+            iCAOToolStripMenuItem.Name = "iCAOToolStripMenuItem";
+            iCAOToolStripMenuItem.Size = new Size(47, 20);
+            iCAOToolStripMenuItem.Text = "ICAO";
+            // 
+            // BasicILSToolStripMenuItem
+            // 
+            BasicILSToolStripMenuItem.Name = "BasicILSToolStripMenuItem";
+            BasicILSToolStripMenuItem.Size = new Size(180, 22);
+            BasicILSToolStripMenuItem.Text = "Basic ILS";
+            BasicILSToolStripMenuItem.Click += BasicILSToolStripMenuItem_Click;
             // 
             // helpToolStripMenuItem
             // 
@@ -76,19 +98,56 @@
             AboutToolStripMenuItem.Text = "About";
             AboutToolStripMenuItem.Click += AboutToolStripMenuItem_Click;
             // 
-            // iCAOToolStripMenuItem
+            // geodeticsToolStripMenuItem
             // 
-            iCAOToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { BasicILSToolStripMenuItem });
-            iCAOToolStripMenuItem.Name = "iCAOToolStripMenuItem";
-            iCAOToolStripMenuItem.Size = new Size(47, 20);
-            iCAOToolStripMenuItem.Text = "ICAO";
+            geodeticsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { fAAToolStripMenuItem, greatCircleToolStripMenuItem, wGS84UTMToolStripMenuItem, intersectionToolStripMenuItem });
+            geodeticsToolStripMenuItem.Name = "geodeticsToolStripMenuItem";
+            geodeticsToolStripMenuItem.Size = new Size(71, 20);
+            geodeticsToolStripMenuItem.Text = "Geodetics";
             // 
-            // BasicILSToolStripMenuItem
+            // fAAToolStripMenuItem
             // 
-            BasicILSToolStripMenuItem.Name = "BasicILSToolStripMenuItem";
-            BasicILSToolStripMenuItem.Size = new Size(180, 22);
-            BasicILSToolStripMenuItem.Text = "Basic ILS";
-            BasicILSToolStripMenuItem.Click += BasicILSToolStripMenuItem_Click;
+            fAAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { distanceToolStripMenuItem, destinationToolStripMenuItem });
+            fAAToolStripMenuItem.Name = "fAAToolStripMenuItem";
+            fAAToolStripMenuItem.Size = new Size(180, 22);
+            fAAToolStripMenuItem.Text = "FAA";
+            // 
+            // distanceToolStripMenuItem
+            // 
+            distanceToolStripMenuItem.Name = "distanceToolStripMenuItem";
+            distanceToolStripMenuItem.Size = new Size(180, 22);
+            distanceToolStripMenuItem.Text = "Distance";
+            // 
+            // destinationToolStripMenuItem
+            // 
+            destinationToolStripMenuItem.Name = "destinationToolStripMenuItem";
+            destinationToolStripMenuItem.Size = new Size(180, 22);
+            destinationToolStripMenuItem.Text = "Destination";
+            // 
+            // greatCircleToolStripMenuItem
+            // 
+            greatCircleToolStripMenuItem.Name = "greatCircleToolStripMenuItem";
+            greatCircleToolStripMenuItem.Size = new Size(180, 22);
+            greatCircleToolStripMenuItem.Text = "Great Circle";
+            // 
+            // wGS84UTMToolStripMenuItem
+            // 
+            wGS84UTMToolStripMenuItem.Name = "wGS84UTMToolStripMenuItem";
+            wGS84UTMToolStripMenuItem.Size = new Size(180, 22);
+            wGS84UTMToolStripMenuItem.Text = "WGS-84 <-> UTM";
+            // 
+            // intersectionToolStripMenuItem
+            // 
+            intersectionToolStripMenuItem.Name = "intersectionToolStripMenuItem";
+            intersectionToolStripMenuItem.Size = new Size(180, 22);
+            intersectionToolStripMenuItem.Text = "Intersection";
+            // 
+            // airSpeedIndicatedToTrueToolStripMenuItem
+            // 
+            airSpeedIndicatedToTrueToolStripMenuItem.Name = "airSpeedIndicatedToTrueToolStripMenuItem";
+            airSpeedIndicatedToTrueToolStripMenuItem.Size = new Size(223, 22);
+            airSpeedIndicatedToTrueToolStripMenuItem.Text = "Air Speed (Indicated to True)";
+            airSpeedIndicatedToTrueToolStripMenuItem.Click += AirSpeedIndicatedToTrueToolStripMenuItem_Click;
             // 
             // Main
             // 
@@ -115,5 +174,13 @@
         private ToolStripMenuItem conversionsToolStripMenuItem;
         private ToolStripMenuItem iCAOToolStripMenuItem;
         private ToolStripMenuItem BasicILSToolStripMenuItem;
+        private ToolStripMenuItem airSpeedIndicatedToTrueToolStripMenuItem;
+        private ToolStripMenuItem geodeticsToolStripMenuItem;
+        private ToolStripMenuItem fAAToolStripMenuItem;
+        private ToolStripMenuItem distanceToolStripMenuItem;
+        private ToolStripMenuItem destinationToolStripMenuItem;
+        private ToolStripMenuItem greatCircleToolStripMenuItem;
+        private ToolStripMenuItem wGS84UTMToolStripMenuItem;
+        private ToolStripMenuItem intersectionToolStripMenuItem;
     }
 }

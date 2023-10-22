@@ -27,5 +27,11 @@ namespace FPAssistantSampleAppWf
             BasicIlsForm basicIlsForm = new();
             basicIlsForm.Show();
         }
+
+        private void AirSpeedIndicatedToTrueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AirSpeedForm airSpeedForm = new();
+            airSpeedForm.Show();
+        }
     }
 }

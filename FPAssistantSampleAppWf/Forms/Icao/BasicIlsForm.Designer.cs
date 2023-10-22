@@ -28,11 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BasicIlsForm));
             SplitContainer = new SplitContainer();
+            TextBoxBearing = new TextBox();
+            LabelBearing = new Label();
+            TextBoxLongitude = new TextBox();
+            TextBoxLatitude = new TextBox();
+            ButtonConstruct = new Button();
             LabelLongitude = new Label();
             LabelLatitude = new Label();
             WebView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            LabelElevation = new Label();
+            TextBoxElevation = new TextBox();
+            ToolTipBasicIlsForm = new ToolTip(components);
+            ButtonSaveToGml = new Button();
             ((System.ComponentModel.ISupportInitialize)SplitContainer).BeginInit();
             SplitContainer.Panel1.SuspendLayout();
             SplitContainer.Panel2.SuspendLayout();
@@ -49,6 +59,14 @@
             // 
             // SplitContainer.Panel1
             // 
+            SplitContainer.Panel1.Controls.Add(ButtonSaveToGml);
+            SplitContainer.Panel1.Controls.Add(TextBoxElevation);
+            SplitContainer.Panel1.Controls.Add(LabelElevation);
+            SplitContainer.Panel1.Controls.Add(TextBoxBearing);
+            SplitContainer.Panel1.Controls.Add(LabelBearing);
+            SplitContainer.Panel1.Controls.Add(TextBoxLongitude);
+            SplitContainer.Panel1.Controls.Add(TextBoxLatitude);
+            SplitContainer.Panel1.Controls.Add(ButtonConstruct);
             SplitContainer.Panel1.Controls.Add(LabelLongitude);
             SplitContainer.Panel1.Controls.Add(LabelLatitude);
             // 
@@ -59,10 +77,54 @@
             SplitContainer.SplitterDistance = 78;
             SplitContainer.TabIndex = 0;
             // 
+            // TextBoxBearing
+            // 
+            TextBoxBearing.Location = new Point(268, 6);
+            TextBoxBearing.Name = "TextBoxBearing";
+            TextBoxBearing.Size = new Size(100, 23);
+            TextBoxBearing.TabIndex = 6;
+            TextBoxBearing.Text = "0";
+            ToolTipBasicIlsForm.SetToolTip(TextBoxBearing, "Bearing in Degrees");
+            // 
+            // LabelBearing
+            // 
+            LabelBearing.AutoSize = true;
+            LabelBearing.Location = new Point(207, 9);
+            LabelBearing.Name = "LabelBearing";
+            LabelBearing.Size = new Size(47, 15);
+            LabelBearing.TabIndex = 5;
+            LabelBearing.Text = "Bearing";
+            // 
+            // TextBoxLongitude
+            // 
+            TextBoxLongitude.Location = new Point(79, 35);
+            TextBoxLongitude.Name = "TextBoxLongitude";
+            TextBoxLongitude.Size = new Size(100, 23);
+            TextBoxLongitude.TabIndex = 4;
+            ToolTipBasicIlsForm.SetToolTip(TextBoxLongitude, "Longitude in Decimal");
+            // 
+            // TextBoxLatitude
+            // 
+            TextBoxLatitude.Location = new Point(79, 6);
+            TextBoxLatitude.Name = "TextBoxLatitude";
+            TextBoxLatitude.Size = new Size(100, 23);
+            TextBoxLatitude.TabIndex = 3;
+            ToolTipBasicIlsForm.SetToolTip(TextBoxLatitude, "Latitude in Decimal");
+            // 
+            // ButtonConstruct
+            // 
+            ButtonConstruct.Location = new Point(897, 38);
+            ButtonConstruct.Name = "ButtonConstruct";
+            ButtonConstruct.Size = new Size(75, 23);
+            ButtonConstruct.TabIndex = 2;
+            ButtonConstruct.Text = "Construct";
+            ButtonConstruct.UseVisualStyleBackColor = true;
+            ButtonConstruct.Click += ButtonConstruct_Click;
+            // 
             // LabelLongitude
             // 
             LabelLongitude.AutoSize = true;
-            LabelLongitude.Location = new Point(12, 38);
+            LabelLongitude.Location = new Point(12, 42);
             LabelLongitude.Name = "LabelLongitude";
             LabelLongitude.Size = new Size(61, 15);
             LabelLongitude.TabIndex = 1;
@@ -90,6 +152,33 @@
             WebView21.TabIndex = 0;
             WebView21.ZoomFactor = 1D;
             // 
+            // LabelElevation
+            // 
+            LabelElevation.AutoSize = true;
+            LabelElevation.Location = new Point(207, 42);
+            LabelElevation.Name = "LabelElevation";
+            LabelElevation.Size = new Size(55, 15);
+            LabelElevation.TabIndex = 7;
+            LabelElevation.Text = "Elevation";
+            // 
+            // TextBoxElevation
+            // 
+            TextBoxElevation.Location = new Point(268, 39);
+            TextBoxElevation.Name = "TextBoxElevation";
+            TextBoxElevation.Size = new Size(100, 23);
+            TextBoxElevation.TabIndex = 8;
+            TextBoxElevation.Text = "0.0";
+            ToolTipBasicIlsForm.SetToolTip(TextBoxElevation, "Elevation in Metres (m)");
+            // 
+            // ButtonSaveToGml
+            // 
+            ButtonSaveToGml.Location = new Point(895, 7);
+            ButtonSaveToGml.Name = "ButtonSaveToGml";
+            ButtonSaveToGml.Size = new Size(75, 23);
+            ButtonSaveToGml.TabIndex = 9;
+            ButtonSaveToGml.Text = "GML->";
+            ButtonSaveToGml.UseVisualStyleBackColor = true;
+            // 
             // BasicIlsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -116,5 +205,14 @@
         private Label LabelLatitude;
         private Label LabelLongitude;
         private Microsoft.Web.WebView2.WinForms.WebView2 WebView21;
+        private Button ButtonConstruct;
+        private TextBox TextBoxBearing;
+        private Label LabelBearing;
+        private TextBox TextBoxLongitude;
+        private TextBox TextBoxLatitude;
+        private Label LabelElevation;
+        private Button ButtonSaveToGml;
+        private TextBox TextBoxElevation;
+        private ToolTip ToolTipBasicIlsForm;
     }
 }

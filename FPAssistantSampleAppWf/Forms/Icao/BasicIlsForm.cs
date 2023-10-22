@@ -54,7 +54,22 @@ namespace FPAssistantSampleAppWf.Forms.Icao
             Debug.WriteLine("after NavigateToString");
         }
 
-        private string html = @"<!DOCTYPE html>
+        private void ButtonConstruct_Click(object sender, EventArgs e)
+        {
+            var tt = WebView21.ExecuteScriptAsync(javaScript);
+        }
+
+
+        private readonly string javaScript = @"var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {});
+var center = map.getCenter();
+var polyline = new Microsoft.Maps.Polyline([
+    new Microsoft.Maps.Location(center.latitude + 0.02, center.longitude - 0.08),
+    new Microsoft.Maps.Location(center.latitude + 0.02, center.longitude),
+    new Microsoft.Maps.Location(center.latitude - 0.02, center.longitude),
+    new Microsoft.Maps.Location(center.latitude - 0.02, center.longitude + 0.08)], null);
+map.entities.push(polyline);";
+
+        private readonly string html = @"<!DOCTYPE html>
                                <html>
                                <head>
                                   <title></title>
@@ -66,7 +81,7 @@ namespace FPAssistantSampleAppWf.Forms.Icao
                                   function GetMap()
                                   {
                                       var map = new Microsoft.Maps.Map('#myMap', {
-                                          credentials: 'Your Bing MAPS API key',
+                                          credentials: 'P2iDzZSmcbjyOXbKpKpi~lv5pTdgXFmEfyczAEnzCgg~AprXWl9t71nA_08VW4FefTUQKVrlD4YVi0NyRPFG6_bVoLnDU-IsFhuB0ux6pPtC',
                                           center: new Microsoft.Maps.Location(51.50632, -0.12714),
                                           mapTypeId: Microsoft.Maps.MapTypeId.aerial,
                                           zoom: 10
