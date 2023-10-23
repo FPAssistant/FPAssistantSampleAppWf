@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace FPAssistantSampleAppWf
 {
     internal static class Program
@@ -13,5 +15,18 @@ namespace FPAssistantSampleAppWf
             ApplicationConfiguration.Initialize();
             Application.Run(new Main());
         }
+
+        static public void VisitLink(string url)
+        {
+            ProcessStartInfo psi = new ProcessStartInfo
+            {
+                FileName = url,
+                UseShellExecute = true
+            };
+            Process.Start(psi);
+        }
+
+        static public string AppMessageBoxCaption = "FPAssistant";
+        static public string AppCantOpenUrlLink = "Unable to open URL link in default browser!";
     }
 }

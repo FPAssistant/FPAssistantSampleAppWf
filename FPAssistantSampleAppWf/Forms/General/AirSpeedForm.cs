@@ -87,24 +87,13 @@ namespace FPAssistantSampleAppWf.Forms.General
         {
             try
             {
-                VisitLink();
+                Program.VisitLink(@"http://api.fpassistant.com/api/FpAssistantCore.GeneralAviation.IndicatedAirSpeed.html");
+                LinkLabelApiIndicatedAirSpeed.LinkVisited = true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Unable to open link that was clicked.");
+                MessageBox.Show(Program.AppCantOpenUrlLink, Program.AppMessageBoxCaption);
             }
-        }
-
-        private void VisitLink()
-        {
-            LinkLabelApiIndicatedAirSpeed.LinkVisited = true;
-
-            ProcessStartInfo psi = new ProcessStartInfo
-            {
-                FileName = @"http://api.fpassistant.com/api/FpAssistantCore.GeneralAviation.IndicatedAirSpeed.html",
-                UseShellExecute = true
-            };
-            Process.Start(psi);
         }
     }
 }

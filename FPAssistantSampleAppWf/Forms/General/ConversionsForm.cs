@@ -113,5 +113,18 @@ namespace FPAssistantSampleAppWf.Forms.General
                 skipTextChangedEvent = false;
             }
         }
+
+        private void LinkLabelConversionLinear_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                Program.VisitLink(@"http://api.fpassistant.com/api/FpAssistantCore.General.LinearDistance.html");
+                LinkLabelConversionLinear.LinkVisited = true;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(Program.AppCantOpenUrlLink, Program.AppMessageBoxCaption);
+            }
+        }
     }
 }

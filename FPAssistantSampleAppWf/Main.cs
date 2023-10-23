@@ -33,5 +33,18 @@ namespace FPAssistantSampleAppWf
             AirSpeedForm airSpeedForm = new();
             airSpeedForm.Show();
         }
+
+        private void LinkLabelFpassistantSdkHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                Program.VisitLink(@"http://api.fpassistant.com/index.html");
+                LinkLabelFpassistantSdkHome.LinkVisited = true;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(Program.AppCantOpenUrlLink, Program.AppMessageBoxCaption);
+            }
+        }
     }
 }

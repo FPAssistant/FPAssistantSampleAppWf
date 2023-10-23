@@ -38,6 +38,7 @@
             LabelMetres = new Label();
             TextBoxFeet = new TextBox();
             TextBoxMetres = new TextBox();
+            LinkLabelConversionLinear = new LinkLabel();
             SuspendLayout();
             // 
             // ButtonClose
@@ -120,11 +121,23 @@
             TextBoxMetres.TabIndex = 8;
             TextBoxMetres.TextChanged += TextBoxMetres_TextChanged;
             // 
+            // LinkLabelConversionLinear
+            // 
+            LinkLabelConversionLinear.AutoSize = true;
+            LinkLabelConversionLinear.Location = new Point(21, 115);
+            LinkLabelConversionLinear.Name = "LinkLabelConversionLinear";
+            LinkLabelConversionLinear.Size = new Size(159, 15);
+            LinkLabelConversionLinear.TabIndex = 9;
+            LinkLabelConversionLinear.TabStop = true;
+            LinkLabelConversionLinear.Text = "Linear Distance Comversions";
+            LinkLabelConversionLinear.LinkClicked += LinkLabelConversionLinear_LinkClicked;
+            // 
             // ConversionsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(391, 167);
+            Controls.Add(LinkLabelConversionLinear);
             Controls.Add(TextBoxMetres);
             Controls.Add(TextBoxFeet);
             Controls.Add(LabelMetres);
@@ -152,5 +165,6 @@
         private Label LabelMetres;
         private TextBox TextBoxFeet;
         private TextBox TextBoxMetres;
+        private LinkLabel LinkLabelConversionLinear;
     }
 }
