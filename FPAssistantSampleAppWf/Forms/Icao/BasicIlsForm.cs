@@ -1,16 +1,23 @@
-﻿using System;
+﻿using FpAssistantCore.General;
+using FpAssistantCore.Geographical;
+using FpAssistantCore.IcaoPansOps;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FPAssistantSampleAppWf.Forms.Icao
 {
+/// <summary>
+/// Form to display the parameters to construct an ICAO Basic ILS and a map to show the surfaces constructed
+/// </summary>
     public partial class BasicIlsForm : Form
     {
         public BasicIlsForm()
@@ -41,33 +48,43 @@ namespace FPAssistantSampleAppWf.Forms.Icao
             await WebView21.EnsureCoreWebView2Async(null);
             Debug.WriteLine("WebView2 Runtime version: " + WebView21.CoreWebView2.Environment.BrowserVersionString);
 
-            //webView2.CoreWebView2.Navigate("https://www.microsoft.com");
-            //Debug.WriteLine("after Navigate");
-
             if ((WebView21 == null) || (WebView21.CoreWebView2 == null))
             {
-                Debug.WriteLine("not ready");
+                Debug.WriteLine("not ready!");
+                return;
             }
 
             WebView21.NavigateToString(html);
-
-            Debug.WriteLine("after NavigateToString");
         }
 
-        private void ButtonConstruct_Click(object sender, EventArgs e)
+        private async void ButtonConstruct_Click(object sender, EventArgs e)
         {
-            var tt = WebView21.ExecuteScriptAsync(javaScript);
+            DeveloperLicense.License = "{Your FPAssistant license key goes here";
+            BasicIlsSurfaces basicIlsSurface = new(FpAssistantCore.GeneralAviation.CriteriaUnits.Si)
+            {
+                BasePoint = new GeoCoordinate(51.50632, -0.12714) // Lat: 510853N Long: 0001125W
+            };
+
+            GeoMapElementCollection geoMapElementCollection = await Task.Run(() =>
+            {
+                return basicIlsSurface.CreateGeographicalGeometry(CoordinateSystems.FindByMapProjection(MapProjections.UtmWgs84), GraphicalRepresentation.Lines);
+            });
+
+            List<GeoMapEngineElement> geoMapEngineElements = WebViewEngine.Create(geoMapElementCollection);
+
+            StringBuilder javaScript = new StringBuilder();
+            WebViewEngine.Initalise(ref javaScript);
+            foreach (GeoMapEngineElement geoMapEngineElement in geoMapEngineElements)
+            {
+                if (geoMapEngineElement.EngineObject is string mapElement)
+                {
+                    javaScript.Append(mapElement);
+                }
+            }
+            WebViewEngine.Finalise(ref javaScript);
+
+            _ = WebView21.ExecuteScriptAsync(javaScript.ToString());
         }
-
-
-        private readonly string javaScript = @"var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {});
-var center = map.getCenter();
-var polyline = new Microsoft.Maps.Polyline([
-    new Microsoft.Maps.Location(center.latitude + 0.02, center.longitude - 0.08),
-    new Microsoft.Maps.Location(center.latitude + 0.02, center.longitude),
-    new Microsoft.Maps.Location(center.latitude - 0.02, center.longitude),
-    new Microsoft.Maps.Location(center.latitude - 0.02, center.longitude + 0.08)], null);
-map.entities.push(polyline);";
 
         private readonly string html = @"<!DOCTYPE html>
                                <html>
@@ -81,7 +98,7 @@ map.entities.push(polyline);";
                                   function GetMap()
                                   {
                                       var map = new Microsoft.Maps.Map('#myMap', {
-                                          credentials: 'Your API key here',
+                                          credentials: 'Your Bing Maps API key here',
                                           center: new Microsoft.Maps.Location(51.50632, -0.12714),
                                           mapTypeId: Microsoft.Maps.MapTypeId.aerial,
                                           zoom: 10
