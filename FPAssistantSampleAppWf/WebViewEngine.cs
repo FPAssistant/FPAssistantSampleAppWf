@@ -1,9 +1,6 @@
-﻿using FpAssistantCore.Geographical;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
+
+using FpAssistantCore.Geographical;
 
 namespace FPAssistantSampleAppWf
 {
@@ -18,17 +15,14 @@ namespace FPAssistantSampleAppWf
 
         public static List<GeoMapEngineElement> Create(GeoMapElementCollection geoMapElements)
         {
-            WebViewEngine engine = new WebViewEngine();
+            WebViewEngine engine = new();
             List<GeoMapEngineElement> newGeoMapElements = engine.CreateGeoMapElements(geoMapElements);
             return newGeoMapElements;
         }
 
         public override List<GeoMapEngineElement> CreateGeoMapElements(GeoMapElementCollection geoMapElements)
         {
-            List<GeoMapEngineElement> results = null;
-
-            results = base.CreateGeoMapElements(geoMapElements);
-
+            List<GeoMapEngineElement>? results = base.CreateGeoMapElements(geoMapElements);
             return results;
         }
 
@@ -36,7 +30,7 @@ namespace FPAssistantSampleAppWf
         /// Using Layers in the Bing Maps V8 Control, need to create a new Layer
         /// </summary>
         /// <param name="stringBuilder"></param>
-        public static void Initalise(ref StringBuilder stringBuilder)
+        public static void Initialise(ref StringBuilder stringBuilder)
         {
             stringBuilder.Append("var layer = new Microsoft.Maps.Layer();");
         }

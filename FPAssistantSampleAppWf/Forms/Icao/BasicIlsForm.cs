@@ -1,7 +1,4 @@
-﻿using FpAssistantCore.General;
-using FpAssistantCore.Geographical;
-using FpAssistantCore.IcaoPansOps;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,11 +10,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using FpAssistantCore.General;
+using FpAssistantCore.Geographical;
+using FpAssistantCore.IcaoPansOps;
+
 namespace FPAssistantSampleAppWf.Forms.Icao
 {
-/// <summary>
-/// Form to display the parameters to construct an ICAO Basic ILS and a map to show the surfaces constructed
-/// </summary>
+    /// <summary>
+    /// Form to display the parameters to construct an ICAO Basic ILS and a map to show the surfaces constructed
+    /// </summary>
     public partial class BasicIlsForm : Form
     {
         public BasicIlsForm()
@@ -72,8 +73,8 @@ namespace FPAssistantSampleAppWf.Forms.Icao
 
             List<GeoMapEngineElement> geoMapEngineElements = WebViewEngine.Create(geoMapElementCollection);
 
-            StringBuilder javaScript = new StringBuilder();
-            WebViewEngine.Initalise(ref javaScript);
+            StringBuilder javaScript = new();
+            WebViewEngine.Initialise(ref javaScript);
             foreach (GeoMapEngineElement geoMapEngineElement in geoMapEngineElements)
             {
                 if (geoMapEngineElement.EngineObject is string mapElement)

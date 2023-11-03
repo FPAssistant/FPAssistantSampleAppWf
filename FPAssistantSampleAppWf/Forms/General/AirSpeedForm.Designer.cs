@@ -237,7 +237,7 @@
             Controls.Add(LabelIas);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AirSpeedForm";
-            Text = "AirSpeedForm";
+            Text = "Airspeed Form";
             Load += AirSpeedForm_Load;
             ResumeLayout(false);
             PerformLayout();
