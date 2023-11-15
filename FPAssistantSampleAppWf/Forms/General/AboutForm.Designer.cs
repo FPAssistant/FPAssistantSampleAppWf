@@ -31,12 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
             ButtonClose = new Button();
             LabelFPAssistantSdkVersion = new Label();
+            LabelDeveloperName = new Label();
+            PictureBoxFPAssistantLogo = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)PictureBoxFPAssistantLogo).BeginInit();
             SuspendLayout();
             // 
             // ButtonClose
             // 
             ButtonClose.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            ButtonClose.Location = new Point(208, 210);
+            ButtonClose.Location = new Point(318, 156);
             ButtonClose.Name = "ButtonClose";
             ButtonClose.Size = new Size(105, 27);
             ButtonClose.TabIndex = 0;
@@ -53,16 +56,37 @@
             LabelFPAssistantSdkVersion.TabIndex = 1;
             LabelFPAssistantSdkVersion.Text = "SDK Version";
             // 
+            // LabelDeveloperName
+            // 
+            LabelDeveloperName.AutoSize = true;
+            LabelDeveloperName.Location = new Point(21, 9);
+            LabelDeveloperName.Name = "LabelDeveloperName";
+            LabelDeveloperName.Size = new Size(95, 15);
+            LabelDeveloperName.TabIndex = 2;
+            LabelDeveloperName.Text = "Developer Name";
+            // 
+            // PictureBoxFPAssistantLogo
+            // 
+            PictureBoxFPAssistantLogo.Image = (Image)resources.GetObject("PictureBoxFPAssistantLogo.Image");
+            PictureBoxFPAssistantLogo.Location = new Point(21, 95);
+            PictureBoxFPAssistantLogo.Name = "PictureBoxFPAssistantLogo";
+            PictureBoxFPAssistantLogo.Size = new Size(111, 111);
+            PictureBoxFPAssistantLogo.TabIndex = 3;
+            PictureBoxFPAssistantLogo.TabStop = false;
+            // 
             // AboutForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(344, 263);
+            ClientSize = new Size(454, 209);
+            Controls.Add(PictureBoxFPAssistantLogo);
+            Controls.Add(LabelDeveloperName);
             Controls.Add(LabelFPAssistantSdkVersion);
             Controls.Add(ButtonClose);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AboutForm";
             Text = "About FPAssistant SDK";
+            ((System.ComponentModel.ISupportInitialize)PictureBoxFPAssistantLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -71,5 +95,7 @@
 
         private Button ButtonClose;
         private Label LabelFPAssistantSdkVersion;
+        private Label LabelDeveloperName;
+        private PictureBox PictureBoxFPAssistantLogo;
     }
 }

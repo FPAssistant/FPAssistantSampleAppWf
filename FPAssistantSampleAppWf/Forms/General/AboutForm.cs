@@ -19,7 +19,9 @@ namespace FPAssistantSampleAppWf.Forms.General
             InitializeComponent();
 
             string sdkVersion = Utilities.GetFPAssistantSDKFileVersion();
-            LabelFPAssistantSdkVersion.Text += " " + sdkVersion;
+            LabelFPAssistantSdkVersion.Text += " - " + sdkVersion;
+
+            LabelDeveloperName.Text += " - " + DeveloperLicense.DeveloperName;
         }
 
         private void ButtonClose_Click(object sender, EventArgs e)
