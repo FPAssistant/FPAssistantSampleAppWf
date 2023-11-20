@@ -24,6 +24,9 @@ namespace FPAssistantSampleAppWf.Forms.Icao
         public BasicIlsForm()
         {
             InitializeComponent();
+
+            this.TextBoxLatitude.Text = "51.50632";
+            this.TextBoxLongitude.Text = "-0.12714";
         }
 
         private async void BasicIlsForm_Load(object sender, EventArgs e)
@@ -60,10 +63,24 @@ namespace FPAssistantSampleAppWf.Forms.Icao
 
         private async void ButtonConstruct_Click(object sender, EventArgs e)
         {
-            DeveloperLicense.License = "{Your FPAssistant license key goes here";
+            (bool status, double latitude) = Utilities.ConvertStringToDouble(TextBoxLatitude.Text);
+            if (status == false)
+            {
+                MessageBox.Show("Unable to understand Latitude value!", Program.AppMessageBoxCaption, MessageBoxButtons.OK);
+                return;
+            }
+            (status, double longitude) = Utilities.ConvertStringToDouble(TextBoxLongitude.Text);
+            if (status == false)
+            {
+                MessageBox.Show("Unable to understand Longitude value!", Program.AppMessageBoxCaption, MessageBoxButtons.OK);
+                return;
+            }
+
+            Cursor = Cursors.WaitCursor;
             BasicIlsSurfaces basicIlsSurface = new(FpAssistantCore.GeneralAviation.CriteriaUnits.Si)
             {
-                BasePoint = new GeoCoordinate(51.50632, -0.12714) // Lat: 510853N Long: 0001125W
+                
+                BasePoint = new GeoCoordinate(latitude, longitude)
             };
 
             GeoMapElementCollection geoMapElementCollection = await Task.Run(() =>
@@ -85,6 +102,7 @@ namespace FPAssistantSampleAppWf.Forms.Icao
             WebViewEngine.Finalise(ref javaScript);
 
             _ = WebView21.ExecuteScriptAsync(javaScript.ToString());
+            Cursor = Cursors.Default;
         }
 
         private readonly string html = @"<!DOCTYPE html>

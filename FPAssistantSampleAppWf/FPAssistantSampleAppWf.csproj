@@ -12,8 +12,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FpAssistantCoreScl" Version="2023.4.26.2" />
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2045.28" />
+    <PackageReference Include="FpAssistantCoreScl" Version="2023.11.19.1" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2151.40" />
   </ItemGroup>
 
   <ItemGroup>
