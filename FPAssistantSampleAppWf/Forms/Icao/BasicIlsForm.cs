@@ -19,6 +19,7 @@ namespace FPAssistantSampleAppWf.Forms.Icao
     /// <summary>
     /// Form to display the parameters to construct an ICAO Basic ILS and a map to show the surfaces constructed
     /// </summary>
+    /// <remarks>https://weblog.west-wind.com/posts/2021/Jan/26/Chromium-WebView2-Control-and-NET-to-JavaScript-Interop-Part-2</remarks>
     public partial class BasicIlsForm : Form
     {
         public BasicIlsForm()

@@ -103,37 +103,39 @@
             // 
             fAAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { distanceToolStripMenuItem, destinationToolStripMenuItem });
             fAAToolStripMenuItem.Name = "fAAToolStripMenuItem";
-            fAAToolStripMenuItem.Size = new Size(168, 22);
+            fAAToolStripMenuItem.Size = new Size(180, 22);
             fAAToolStripMenuItem.Text = "FAA";
             // 
             // distanceToolStripMenuItem
             // 
             distanceToolStripMenuItem.Name = "distanceToolStripMenuItem";
-            distanceToolStripMenuItem.Size = new Size(134, 22);
+            distanceToolStripMenuItem.Size = new Size(180, 22);
             distanceToolStripMenuItem.Text = "Distance";
+            distanceToolStripMenuItem.Click += distanceToolStripMenuItem_Click;
             // 
             // destinationToolStripMenuItem
             // 
             destinationToolStripMenuItem.Name = "destinationToolStripMenuItem";
-            destinationToolStripMenuItem.Size = new Size(134, 22);
+            destinationToolStripMenuItem.Size = new Size(180, 22);
             destinationToolStripMenuItem.Text = "Destination";
+            destinationToolStripMenuItem.Click += destinationToolStripMenuItem_Click;
             // 
             // greatCircleToolStripMenuItem
             // 
             greatCircleToolStripMenuItem.Name = "greatCircleToolStripMenuItem";
-            greatCircleToolStripMenuItem.Size = new Size(168, 22);
+            greatCircleToolStripMenuItem.Size = new Size(180, 22);
             greatCircleToolStripMenuItem.Text = "Great Circle";
             // 
             // wGS84UTMToolStripMenuItem
             // 
             wGS84UTMToolStripMenuItem.Name = "wGS84UTMToolStripMenuItem";
-            wGS84UTMToolStripMenuItem.Size = new Size(168, 22);
+            wGS84UTMToolStripMenuItem.Size = new Size(180, 22);
             wGS84UTMToolStripMenuItem.Text = "WGS-84 <-> UTM";
             // 
             // intersectionToolStripMenuItem
             // 
             intersectionToolStripMenuItem.Name = "intersectionToolStripMenuItem";
-            intersectionToolStripMenuItem.Size = new Size(168, 22);
+            intersectionToolStripMenuItem.Size = new Size(180, 22);
             intersectionToolStripMenuItem.Text = "Intersection";
             // 
             // helpToolStripMenuItem
