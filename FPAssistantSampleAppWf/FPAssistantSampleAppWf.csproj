@@ -11,8 +11,8 @@
     <PackageIcon>StoreLogo.scale-200.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <Company>CADology Limited</Company>
-    <AssemblyVersion>2023.11.23.1</AssemblyVersion>
-    <FileVersion>2023.11.23.1</FileVersion>
+    <AssemblyVersion>2023.11.27.1</AssemblyVersion>
+    <FileVersion>2023.11.27.1</FileVersion>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
   </PropertyGroup>
 
