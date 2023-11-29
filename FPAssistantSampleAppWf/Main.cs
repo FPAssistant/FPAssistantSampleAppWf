@@ -39,22 +39,28 @@ namespace FPAssistantSampleAppWf
             airSpeedForm.Show();
         }
 
-        private void distanceToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DistanceToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FaaDistanceForm faaDistanceForm = new();
             faaDistanceForm.Show();
         }
 
-        private void destinationToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DestinationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FaaDestinationForm faaDestinationForm = new();
             faaDestinationForm.Show();
         }
 
-        private void geoCoordinateToolStripMenuItem_Click(object sender, EventArgs e)
+        private void GeoCoordinateToolStripMenuItem_Click(object sender, EventArgs e)
         {
             GeoCoordinateForm geoCoordinateForm = new();
             geoCoordinateForm.Show();
+        }
+
+        private void GreatCircleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GreatCircleForm greatCircleForm = new();    
+            greatCircleForm.Show(); 
         }
         #endregion
 
@@ -70,6 +76,5 @@ namespace FPAssistantSampleAppWf
                 MessageBox.Show(Program.AppCantOpenUrlLink, Program.AppMessageBoxCaption);
             }
         }
-
     }
 }

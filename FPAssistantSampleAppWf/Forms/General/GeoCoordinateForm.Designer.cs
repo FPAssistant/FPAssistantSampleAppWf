@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeoCoordinateForm));
             ButtonClose = new Button();
             LabelLatitude = new Label();
@@ -48,12 +49,15 @@
             ComboBoxLatitudeCardinal = new ComboBox();
             ComboBoxLongitudeCardinal = new ComboBox();
             LinkLabelApiGeoCoordinate = new LinkLabel();
+            LabelGeography = new Label();
+            TextBoxGeography = new TextBox();
+            ToolTipGeoCoordinate = new ToolTip(components);
             SuspendLayout();
             // 
             // ButtonClose
             // 
             ButtonClose.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            ButtonClose.Location = new Point(458, 257);
+            ButtonClose.Location = new Point(358, 260);
             ButtonClose.Name = "ButtonClose";
             ButtonClose.Size = new Size(98, 40);
             ButtonClose.TabIndex = 0;
@@ -223,11 +227,31 @@
             LinkLabelApiGeoCoordinate.Text = "API: GeoCoordinate";
             LinkLabelApiGeoCoordinate.LinkClicked += LinkLabelApiGeoCoordinate_LinkClicked;
             // 
+            // LabelGeography
+            // 
+            LabelGeography.AutoSize = true;
+            LabelGeography.Location = new Point(12, 236);
+            LabelGeography.Name = "LabelGeography";
+            LabelGeography.Size = new Size(65, 15);
+            LabelGeography.TabIndex = 21;
+            LabelGeography.Text = "Geography";
+            // 
+            // TextBoxGeography
+            // 
+            TextBoxGeography.Location = new Point(112, 233);
+            TextBoxGeography.Name = "TextBoxGeography";
+            TextBoxGeography.ReadOnly = true;
+            TextBoxGeography.Size = new Size(213, 23);
+            TextBoxGeography.TabIndex = 22;
+            ToolTipGeoCoordinate.SetToolTip(TextBoxGeography, "Format used to store in spatial databases");
+            // 
             // GeoCoordinateForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(568, 309);
+            ClientSize = new Size(468, 312);
+            Controls.Add(TextBoxGeography);
+            Controls.Add(LabelGeography);
             Controls.Add(LinkLabelApiGeoCoordinate);
             Controls.Add(ComboBoxLongitudeCardinal);
             Controls.Add(ComboBoxLatitudeCardinal);
@@ -275,5 +299,8 @@
         private ComboBox ComboBoxLatitudeCardinal;
         private ComboBox ComboBoxLongitudeCardinal;
         private LinkLabel LinkLabelApiGeoCoordinate;
+        private Label LabelGeography;
+        private TextBox TextBoxGeography;
+        private ToolTip ToolTipGeoCoordinate;
     }
 }

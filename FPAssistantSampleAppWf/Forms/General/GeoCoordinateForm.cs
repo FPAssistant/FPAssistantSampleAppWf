@@ -39,6 +39,8 @@ namespace FPAssistantSampleAppWf.Forms.General
 
             ComboBoxLatitudeCardinal.SelectedItem = geoCoordinate.LatitudeCardinalDirection.ToString();
             ComboBoxLongitudeCardinal.SelectedItem = geoCoordinate.LongitudeCardinalDirection.ToString();
+
+            TextBoxGeography.Text = geoCoordinate.AsGeography();
         }
 
         private void TextBoxLatitudeDecimalDms_TextChanged(object sender, EventArgs e)

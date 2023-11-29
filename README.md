@@ -22,4 +22,5 @@ Features:
 The FPAssistant Suite SDK available to license for your own aviation software development and software development consultancy services can be arranged to, please contact CADology for further information.
 
 *Updates*
+Added GeoCoordinate form to show how geo-coordinate struct is used
 2023.11.23.1 - .NET 8.0 / Geodetic distance between two coordinate using FAA algorithm.
