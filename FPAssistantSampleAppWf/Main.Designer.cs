@@ -36,6 +36,7 @@
             iCAOToolStripMenuItem = new ToolStripMenuItem();
             BasicILSToolStripMenuItem = new ToolStripMenuItem();
             geodeticsToolStripMenuItem = new ToolStripMenuItem();
+            geoCoordinateToolStripMenuItem = new ToolStripMenuItem();
             fAAToolStripMenuItem = new ToolStripMenuItem();
             distanceToolStripMenuItem = new ToolStripMenuItem();
             destinationToolStripMenuItem = new ToolStripMenuItem();
@@ -94,48 +95,55 @@
             // 
             // geodeticsToolStripMenuItem
             // 
-            geodeticsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { fAAToolStripMenuItem, greatCircleToolStripMenuItem, wGS84UTMToolStripMenuItem, intersectionToolStripMenuItem });
+            geodeticsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { geoCoordinateToolStripMenuItem, fAAToolStripMenuItem, greatCircleToolStripMenuItem, wGS84UTMToolStripMenuItem, intersectionToolStripMenuItem });
             geodeticsToolStripMenuItem.Name = "geodeticsToolStripMenuItem";
             geodeticsToolStripMenuItem.Size = new Size(71, 20);
             geodeticsToolStripMenuItem.Text = "Geodetics";
+            // 
+            // geoCoordinateToolStripMenuItem
+            // 
+            geoCoordinateToolStripMenuItem.Name = "geoCoordinateToolStripMenuItem";
+            geoCoordinateToolStripMenuItem.Size = new Size(168, 22);
+            geoCoordinateToolStripMenuItem.Text = "GeoCoordinate";
+            geoCoordinateToolStripMenuItem.Click += geoCoordinateToolStripMenuItem_Click;
             // 
             // fAAToolStripMenuItem
             // 
             fAAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { distanceToolStripMenuItem, destinationToolStripMenuItem });
             fAAToolStripMenuItem.Name = "fAAToolStripMenuItem";
-            fAAToolStripMenuItem.Size = new Size(180, 22);
+            fAAToolStripMenuItem.Size = new Size(168, 22);
             fAAToolStripMenuItem.Text = "FAA";
             // 
             // distanceToolStripMenuItem
             // 
             distanceToolStripMenuItem.Name = "distanceToolStripMenuItem";
-            distanceToolStripMenuItem.Size = new Size(180, 22);
+            distanceToolStripMenuItem.Size = new Size(134, 22);
             distanceToolStripMenuItem.Text = "Distance";
             distanceToolStripMenuItem.Click += distanceToolStripMenuItem_Click;
             // 
             // destinationToolStripMenuItem
             // 
             destinationToolStripMenuItem.Name = "destinationToolStripMenuItem";
-            destinationToolStripMenuItem.Size = new Size(180, 22);
+            destinationToolStripMenuItem.Size = new Size(134, 22);
             destinationToolStripMenuItem.Text = "Destination";
             destinationToolStripMenuItem.Click += destinationToolStripMenuItem_Click;
             // 
             // greatCircleToolStripMenuItem
             // 
             greatCircleToolStripMenuItem.Name = "greatCircleToolStripMenuItem";
-            greatCircleToolStripMenuItem.Size = new Size(180, 22);
+            greatCircleToolStripMenuItem.Size = new Size(168, 22);
             greatCircleToolStripMenuItem.Text = "Great Circle";
             // 
             // wGS84UTMToolStripMenuItem
             // 
             wGS84UTMToolStripMenuItem.Name = "wGS84UTMToolStripMenuItem";
-            wGS84UTMToolStripMenuItem.Size = new Size(180, 22);
+            wGS84UTMToolStripMenuItem.Size = new Size(168, 22);
             wGS84UTMToolStripMenuItem.Text = "WGS-84 <-> UTM";
             // 
             // intersectionToolStripMenuItem
             // 
             intersectionToolStripMenuItem.Name = "intersectionToolStripMenuItem";
-            intersectionToolStripMenuItem.Size = new Size(180, 22);
+            intersectionToolStripMenuItem.Size = new Size(168, 22);
             intersectionToolStripMenuItem.Text = "Intersection";
             // 
             // helpToolStripMenuItem
@@ -155,7 +163,7 @@
             // LinkLabelFpassistantSdkHome
             // 
             LinkLabelFpassistantSdkHome.AutoSize = true;
-            LinkLabelFpassistantSdkHome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LinkLabelFpassistantSdkHome.Font = new Font("Segoe UI", 12F);
             LinkLabelFpassistantSdkHome.Location = new Point(24, 46);
             LinkLabelFpassistantSdkHome.Name = "LinkLabelFpassistantSdkHome";
             LinkLabelFpassistantSdkHome.Size = new Size(217, 21);
@@ -174,7 +182,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
             Name = "Main";
-            Text = "FPAssistant SDk Sample App";
+            Text = "FPAssistant SDK Sample App";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -199,5 +207,6 @@
         private ToolStripMenuItem wGS84UTMToolStripMenuItem;
         private ToolStripMenuItem intersectionToolStripMenuItem;
         private LinkLabel LinkLabelFpassistantSdkHome;
+        private ToolStripMenuItem geoCoordinateToolStripMenuItem;
     }
 }

@@ -50,6 +50,12 @@ namespace FPAssistantSampleAppWf
             FaaDestinationForm faaDestinationForm = new();
             faaDestinationForm.Show();
         }
+
+        private void geoCoordinateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GeoCoordinateForm geoCoordinateForm = new();
+            geoCoordinateForm.Show();
+        }
         #endregion
 
         private void LinkLabelFpassistantSdkHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
