@@ -14,7 +14,16 @@
     <AssemblyVersion>2023.11.27.1</AssemblyVersion>
     <FileVersion>2023.11.27.1</FileVersion>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FpAssistantCoreScl" Version="2023.11.19.1" />

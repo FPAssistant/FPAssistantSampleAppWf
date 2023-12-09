@@ -31,6 +31,9 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BasicIlsForm));
             SplitContainer = new SplitContainer();
+            ButtonSaveToGml = new Button();
+            TextBoxElevation = new TextBox();
+            LabelElevation = new Label();
             TextBoxBearing = new TextBox();
             LabelBearing = new Label();
             TextBoxLongitude = new TextBox();
@@ -39,10 +42,7 @@
             LabelLongitude = new Label();
             LabelLatitude = new Label();
             WebView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
-            LabelElevation = new Label();
-            TextBoxElevation = new TextBox();
             ToolTipBasicIlsForm = new ToolTip(components);
-            ButtonSaveToGml = new Button();
             ((System.ComponentModel.ISupportInitialize)SplitContainer).BeginInit();
             SplitContainer.Panel1.SuspendLayout();
             SplitContainer.Panel2.SuspendLayout();
@@ -76,6 +76,34 @@
             SplitContainer.Size = new Size(984, 461);
             SplitContainer.SplitterDistance = 78;
             SplitContainer.TabIndex = 0;
+            // 
+            // ButtonSaveToGml
+            // 
+            ButtonSaveToGml.Location = new Point(895, 7);
+            ButtonSaveToGml.Name = "ButtonSaveToGml";
+            ButtonSaveToGml.Size = new Size(75, 23);
+            ButtonSaveToGml.TabIndex = 9;
+            ButtonSaveToGml.Text = "GML->";
+            ButtonSaveToGml.UseVisualStyleBackColor = true;
+            ButtonSaveToGml.Click += ButtonSaveToGml_Click;
+            // 
+            // TextBoxElevation
+            // 
+            TextBoxElevation.Location = new Point(268, 39);
+            TextBoxElevation.Name = "TextBoxElevation";
+            TextBoxElevation.Size = new Size(100, 23);
+            TextBoxElevation.TabIndex = 8;
+            TextBoxElevation.Text = "0.0";
+            ToolTipBasicIlsForm.SetToolTip(TextBoxElevation, "Elevation in Metres (m)");
+            // 
+            // LabelElevation
+            // 
+            LabelElevation.AutoSize = true;
+            LabelElevation.Location = new Point(207, 42);
+            LabelElevation.Name = "LabelElevation";
+            LabelElevation.Size = new Size(55, 15);
+            LabelElevation.TabIndex = 7;
+            LabelElevation.Text = "Elevation";
             // 
             // TextBoxBearing
             // 
@@ -151,33 +179,6 @@
             WebView21.Source = new Uri("https://www.microsoft.com", UriKind.Absolute);
             WebView21.TabIndex = 0;
             WebView21.ZoomFactor = 1D;
-            // 
-            // LabelElevation
-            // 
-            LabelElevation.AutoSize = true;
-            LabelElevation.Location = new Point(207, 42);
-            LabelElevation.Name = "LabelElevation";
-            LabelElevation.Size = new Size(55, 15);
-            LabelElevation.TabIndex = 7;
-            LabelElevation.Text = "Elevation";
-            // 
-            // TextBoxElevation
-            // 
-            TextBoxElevation.Location = new Point(268, 39);
-            TextBoxElevation.Name = "TextBoxElevation";
-            TextBoxElevation.Size = new Size(100, 23);
-            TextBoxElevation.TabIndex = 8;
-            TextBoxElevation.Text = "0.0";
-            ToolTipBasicIlsForm.SetToolTip(TextBoxElevation, "Elevation in Metres (m)");
-            // 
-            // ButtonSaveToGml
-            // 
-            ButtonSaveToGml.Location = new Point(895, 7);
-            ButtonSaveToGml.Name = "ButtonSaveToGml";
-            ButtonSaveToGml.Size = new Size(75, 23);
-            ButtonSaveToGml.TabIndex = 9;
-            ButtonSaveToGml.Text = "GML->";
-            ButtonSaveToGml.UseVisualStyleBackColor = true;
             // 
             // BasicIlsForm
             // 

@@ -26,8 +26,8 @@ namespace FPAssistantSampleAppWf.Forms.Icao
         {
             InitializeComponent();
 
-            this.TextBoxLatitude.Text = "51.50632";
-            this.TextBoxLongitude.Text = "-0.12714";
+            TextBoxLatitude.Text = "51.50632";
+            TextBoxLongitude.Text = "-0.12714";
         }
 
         private async void BasicIlsForm_Load(object sender, EventArgs e)
@@ -43,8 +43,8 @@ namespace FPAssistantSampleAppWf.Forms.Icao
 
         private void ResizeWebViewOnPanel2()
         {
-            WebView21.Width = this.Width;
-            WebView21.Height = this.Height - SplitContainer.Panel1.Height - 43;
+            WebView21.Width = Width;
+            WebView21.Height = Height - SplitContainer.Panel1.Height - 43;
         }
 
         private async Task InitializeAsync()
@@ -80,7 +80,7 @@ namespace FPAssistantSampleAppWf.Forms.Icao
             Cursor = Cursors.WaitCursor;
             BasicIlsSurfaces basicIlsSurface = new(FpAssistantCore.GeneralAviation.CriteriaUnits.Si)
             {
-                
+
                 BasePoint = new GeoCoordinate(latitude, longitude)
             };
 
@@ -132,5 +132,9 @@ namespace FPAssistantSampleAppWf.Forms.Icao
                                </body>
                                </html>";
 
+        private void ButtonSaveToGml_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Coming soon!", Program.AppMessageBoxCaption, MessageBoxButtons.OK);
+        }
     }
 }
