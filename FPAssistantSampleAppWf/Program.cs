@@ -18,7 +18,7 @@ namespace FPAssistantSampleAppWf
 
         static public void VisitLink(string url)
         {
-            ProcessStartInfo psi = new ProcessStartInfo
+            ProcessStartInfo psi = new()
             {
                 FileName = url,
                 UseShellExecute = true
@@ -26,7 +26,10 @@ namespace FPAssistantSampleAppWf
             Process.Start(psi);
         }
 
-        static public string AppMessageBoxCaption = "FPAssistant";
-        static public string AppCantOpenUrlLink = "Unable to open URL link in default browser!";
+        static public readonly string AppMessageBoxCaption = "FPAssistant";
+        static public readonly string AppCantOpenUrlLink = "Unable to open URL link in default browser!";
+
+        static public readonly string AppLatitudeFormat = "00.000000000000000";
+        static public readonly string AppLongitudeFormat = "000.000000000000000";
     }
 }

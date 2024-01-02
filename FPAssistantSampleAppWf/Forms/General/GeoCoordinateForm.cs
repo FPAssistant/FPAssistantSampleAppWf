@@ -1,6 +1,4 @@
-﻿using FpAssistantCore.General;
-using FpAssistantCore.Geographical;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
+using FpAssistantCore.General;
+using FpAssistantCore.Geographical;
 
 namespace FPAssistantSampleAppWf.Forms.General
 {
@@ -25,8 +26,8 @@ namespace FPAssistantSampleAppWf.Forms.General
 
         private void UpdateForm()
         {
-            TextBoxLatitudeDecimalDms.Text = geoCoordinate.Latitude.ToString("00.0000");
-            TextBoxLongitudeDecimalDms.Text = geoCoordinate.Longitude.ToString("000.0000");
+            TextBoxLatitudeDecimalDms.Text = geoCoordinate.Latitude.ToString(Program.AppLatitudeFormat);
+            TextBoxLongitudeDecimalDms.Text = geoCoordinate.Longitude.ToString(Program.AppLongitudeFormat);
 
             TextBoxLatitudeDegrees.Text = geoCoordinate.LatitudeDegrees.ToString();
             TextBoxLongitudeDegrees.Text = geoCoordinate.LongitudeDegrees.ToString();
