@@ -64,6 +64,7 @@ namespace FPAssistantSampleAppWf.Forms.Icao
 
         private async void ButtonConstruct_Click(object sender, EventArgs e)
         {
+            #region Latitude / Longitude
             (bool status, double latitude) = Utilities.ConvertStringToDouble(TextBoxLatitude.Text);
             if (status == false)
             {
@@ -76,12 +77,29 @@ namespace FPAssistantSampleAppWf.Forms.Icao
                 MessageBox.Show("Unable to understand Longitude value!", Program.AppMessageBoxCaption, MessageBoxButtons.OK);
                 return;
             }
+            #endregion
+
+            (status, double bearing) = Utilities.ConvertStringToDouble(TextBoxBearing.Text);
+            if (status == false)
+            {
+                MessageBox.Show("Unable to understand Bearing value!", Program.AppMessageBoxCaption, MessageBoxButtons.OK);
+                return;
+            }
+
+            (status, double elevation) = Utilities.ConvertStringToDouble(TextBoxElevation.Text);
+            if (status == false)
+            {
+                MessageBox.Show("Unable to understand Bearing value!", Program.AppMessageBoxCaption, MessageBoxButtons.OK);
+                return;
+            }
 
             Cursor = Cursors.WaitCursor;
             BasicIlsSurfaces basicIlsSurface = new(FpAssistantCore.GeneralAviation.CriteriaUnits.Si)
             {
 
-                BasePoint = new GeoCoordinate(latitude, longitude)
+                BasePoint = new GeoCoordinate(latitude, longitude),
+                DirectionOfFlight = new CompassBearing(bearing),
+                HeightMSL = new LinearDistance(elevation, LinearDistanceUnits.Metres)
             };
 
             GeoMapElementCollection geoMapElementCollection = await Task.Run(() =>

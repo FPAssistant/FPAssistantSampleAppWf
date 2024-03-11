@@ -43,6 +43,7 @@
             LabelLatitude = new Label();
             WebView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
             ToolTipBasicIlsForm = new ToolTip(components);
+            LabelMetres = new Label();
             ((System.ComponentModel.ISupportInitialize)SplitContainer).BeginInit();
             SplitContainer.Panel1.SuspendLayout();
             SplitContainer.Panel2.SuspendLayout();
@@ -59,6 +60,7 @@
             // 
             // SplitContainer.Panel1
             // 
+            SplitContainer.Panel1.Controls.Add(LabelMetres);
             SplitContainer.Panel1.Controls.Add(ButtonSaveToGml);
             SplitContainer.Panel1.Controls.Add(TextBoxElevation);
             SplitContainer.Panel1.Controls.Add(LabelElevation);
@@ -180,6 +182,15 @@
             WebView21.TabIndex = 0;
             WebView21.ZoomFactor = 1D;
             // 
+            // LabelMetres
+            // 
+            LabelMetres.AutoSize = true;
+            LabelMetres.Location = new Point(374, 42);
+            LabelMetres.Name = "LabelMetres";
+            LabelMetres.Size = new Size(43, 15);
+            LabelMetres.TabIndex = 10;
+            LabelMetres.Text = "Metres";
+            // 
             // BasicIlsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -215,5 +226,6 @@
         private Button ButtonSaveToGml;
         private TextBox TextBoxElevation;
         private ToolTip ToolTipBasicIlsForm;
+        private Label LabelMetres;
     }
 }
