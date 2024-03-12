@@ -42,6 +42,19 @@ namespace FPAssistantSampleAppWf
         public static void Finalise(ref StringBuilder stringBuilder)
         {
             stringBuilder.Append("map.layers.insert(layer);");
+
+            stringBuilder.Append("map.setView({ bounds: rect, padding: 80 });");
+        }
+
+        /// <summary>
+        /// Zoom to a coordinate and display level
+        /// </summary>
+        /// <param name="stringBuilder"></param>
+        /// <param name="geoCoordinateBasic">Geographical coordinate point for zoom centre</param>
+        /// <param name="zoomLevel">Level of Zoom</param>
+        public static void Zoom(ref StringBuilder stringBuilder, GeoCoordinateBasic geoCoordinateBasic, int zoomLevel)
+        { 
+            stringBuilder.Append(string.Format("map.setView({{center: new Microsoft.Maps.Location({0},{1}),zoom: {2}}});", geoCoordinateBasic.Latitude.ToString(), geoCoordinateBasic.Longitude.ToString(), zoomLevel.ToString()));
         }
 
         protected override object CreateAction(GeoMapElementActions geoMapElementAction)

@@ -22,12 +22,15 @@ namespace FPAssistantSampleAppWf.Forms.Icao
     /// <remarks>https://weblog.west-wind.com/posts/2021/Jan/26/Chromium-WebView2-Control-and-NET-to-JavaScript-Interop-Part-2</remarks>
     public partial class BasicIlsForm : Form
     {
+        // Start coordinate for WebView map - Central London
+        private static readonly GeoCoordinateBasic startGeoCoordinate = new GeoCoordinateBasic(51.50632, -0.12714);
+
         public BasicIlsForm()
         {
             InitializeComponent();
 
-            TextBoxLatitude.Text = "51.50632";
-            TextBoxLongitude.Text = "-0.12714";
+            TextBoxLatitude.Text = startGeoCoordinate.Latitude.ToString();
+            TextBoxLongitude.Text = startGeoCoordinate.Longitude.ToString();
         }
 
         private async void BasicIlsForm_Load(object sender, EventArgs e)
@@ -101,6 +104,7 @@ namespace FPAssistantSampleAppWf.Forms.Icao
                 DirectionOfFlight = new CompassBearing(bearing),
                 HeightMSL = new LinearDistance(elevation, LinearDistanceUnits.Metres)
             };
+            basicIlsSurface.DirectionOfFlight = new CompassBearing(bearing);
 
             GeoMapElementCollection geoMapElementCollection = await Task.Run(() =>
             {
@@ -118,6 +122,7 @@ namespace FPAssistantSampleAppWf.Forms.Icao
                     javaScript.Append(mapElement);
                 }
             }
+            WebViewEngine.Zoom(ref javaScript, startGeoCoordinate, 10);  
             WebViewEngine.Finalise(ref javaScript);
 
             _ = WebView21.ExecuteScriptAsync(javaScript.ToString());
@@ -137,8 +142,8 @@ namespace FPAssistantSampleAppWf.Forms.Icao
                                   {
                                       var map = new Microsoft.Maps.Map('#myMap', {
                                           credentials: 'Your Bing Maps API key here',
-                                          center: new Microsoft.Maps.Location(51.50632, -0.12714),
-                                          mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+                                          center: new Microsoft.Maps.Location(" + startGeoCoordinate.Latitude.ToString() + @"," + startGeoCoordinate.Longitude.ToString() +
+                                          @"), mapTypeId: Microsoft.Maps.MapTypeId.aerial,
                                           zoom: 10
                                       });
                                       //Add your post map load code here.
