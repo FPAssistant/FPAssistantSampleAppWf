@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAQEAAAAEAGAAoMgAAFgAAACgAAABAAAAAgAAAAAEAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/ijDniijXhijTiijXijDnjkEDjkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD7ijzzwxpv45tP669345tPxxp3h
+        iDHjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjz3jkkT56Nj/
+        /////////v7////67N3kl0vjjz3jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jjz7jkD/559b////448/qrnP11bj////34cvijj3jjz7jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/ll0vlmlDklEbjkD7jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/llkrmm1PjkkLjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD7ijjz12Lz88+vjkULijTrjkkP34s7////vwJPijDjjkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/klEb669z////rsHjijDnjkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD7jjz7zzqv////tvIvjkUDjkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjz7kk0XjkkTjkD/jkD/jkEDssnn////01rnjk0Tj
+        jz7jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/iizfxyaL////01rjhiDHjkD/jkD/jkD/jkD/h
+        jj7lkT/lkT/lkT/mkkDnkkDjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjjzmm1L56Nf////nol7jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjz3jjz3jkD/jkD/jkD7q
+        rG/////67uLpqGnijjvjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjjzoo2D////9+fTklUnjjz3j
+        kD/jkD/jkD/lkUDPgzlvRh9tRR5lQRxqQx2rbC/rlUHjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/hiTPw
+        w5f//v733sbjkUHjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jjz3pqGn////////tuojijTnjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/hiDH55tT/
+        ///11rjhijTjkD/jkD/jkD/jkD/kkT/cjD0AAAAQCgRXNxgtHAxEKxPhjz7kkT/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jjz3kk0X77eH////rr3bjjz3jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jjz3opmX////////xx5/jkUHjkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/ijDnttYD//fz//fzll0vjjz3jkD/jkD/jkD/jkD/jkD/rlUFXNxgiFQnplEGaYisNCAOiZy3rlUHj
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/hijT01LX//v788unhizbjkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjz7nol/89/H////01bbll0zjjz7jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/hhi7349D////669ziizbjkD/jkD/jkD/jkD/jkD/jkD/mkkCsbS8JBQLijz7W
+        iDtMMRVVNhfaijzkkT/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjz3klkj99u/////stYDijjvjkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjz7nn1r77uH////45NDm
+        nlfjjz3jkD/jkD/jkD/jkD/jkD/jkD/ijTrpqm389e3////stYDjjjzjkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/hjz4AAABnQRz1m0SRXCgUDQWtbjDnk0DjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/hiTL77eD////5
+        6NnhijTjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjz7m
+        nVb559X////88ujopGLjjz3jkD/jkD/jkD/jkD/jkD/jkD/hiTP117v////////jjz7jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD9kPxwiFQnzmkPPgzk3Iw9vRh/djD3jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/iizbz0bH//v7++/jlm1Ljjz3jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jjz7mm1P34cv//////fzpqWrjjzzjkD/jkD/jkD/jkD/jkD/jkD/hiTT33sj////559bj
+        kD7jkD/jkD/ejT7RhDnQgznQgznPgjngjj7kkD+6djMTDAXfjT7wmEOBUiQHBAK6djTlkUDkkD/kkD/k
+        kD/kkD/jkD/jkD/jkD/jjjzmn1j//fz//v3zz63iizXjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jjz7lmlD23cT////////qrXHjjjzjkD/jkD/jkD/jkD/jkD/jjjzm
+        nVb66tv////yzqvjkD/jkD/nkkCvbzANCAMHBQITDAUAAACeZCzRhTrEfDYAAAB2SyHxmUPUhjspGgt9
+        TyPOgznRhTrRhTrRhTrThjrfjT7lkkDjkD/jkD/hiDL++/j////35NDhiTPjkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD7lmU/22sD////////qrnLjjjzjkD/jkD/j
+        kD/jkD/jkD/ijDfuvIv9+fT////tuIXjkD/jkD/lkUDNgjlAKBFRNBaoay82Ig8YDwZCKRJAKBEGAwEw
+        Hg3rlUHymkN5TCEBAAA6JRBBKhJBKhJBKRJGLROAUiPShTrlkUDjkD/iizb67eH////67eDhiDDjkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD7lmU712b3////////r
+        sXjjjz3jkD/jkD/jkD/jkD/jkD/hijTyzqr////////oqGjjkD/jkD/jkD/kkT9nQhxILhTgjj61czJl
+        QBxdOhpdOxpjPxuDUiTejT7mkkDcjD15TSFdOhpdOxpdOxpeOxpWNxgkFwp0SSDkkT/jkD/iizf349D/
+        ///88ujijTvjkD7jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD7l
+        mE302Lz////////st4LjkD/jkD/jkD/jkD/jkD/jkD/hijX00rH////////mnVbjkD/jkD/jkD/qlUGa
+        YisMCAOkZy3slkHvmELvmELvmELvmELslkLjkD/jkD/kkT/tl0LvmELvmELvmELwmELxmUN9TyI8JhDO
+        gznlkUDijDj23cX////89OzmnVbjjjzjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD7lmE312Lr////////tuonjkUHjkD/jkD/jkD/jkD/jkD/hizbz07L////////lmE7j
+        kD/jkD/jkD/slkGOWicSCwWubjDvl0LzmkT0m0T0m0T0m0TwmEPjkD/jkD/mkkDymUP0m0T0m0T0m0T1
+        m0TnkkBaORlHLRPVhzvlkT/ijDj128D////99e7opWPijTvjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD7lmEz11rj////////uvIzjkUHjkD/jkD/jkD/jkD/jkD/hizbz
+        0rL////////lmU/jkD/jkD/kkD/ejT5bOhloQh31m0SPWicpGgseEwgfFAkkFwpUNRfdjD3ok0DMgTlB
+        KRIeEwgfEwgfEwgfFAkXDwYVDQaVXinok0DjkD/ijDj12sD////99e7opGLijjvjkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD7ll0v01LT////////uvY7jkkLjkD/jkD/j
+        kD/jkD/jkD/hijT00rD////////moFrjkD/jkD/lkUDFfTY1IQ4xHw1nQRwVDQU8JRCFVCSAUiQQCgU3
+        Iw/xmUP0m0RSNBYIBQJ7TSKEVCSEVCSDUySOWifBejbhjz7kkD/jkD/ijDf238j////88+vlmlHjjjzj
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD7klknz0K3////////u
+        vY7jkkLjkD/jkD/jkD/jkD/jkD/iijXyy6b////////qrG7jkD/jkD/nkkCrbS8OCQQNCAMPCQQAAADA
+        eTXjkD/NgjkBAQCWXynwmEPBezUbEgeoai7jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/iizf45tP/
+        ///78ObhiDHjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/k
+        lEbxyqT////////uvo/jkkLjkD/jkD/jkD/jkD/jkD/ijDjstX/99e7////uvY3jkD/jkD/jkD/lkT/r
+        lEDrlUDrlUDslUHkkT/jkD+pay8XDwbul0LtlkJmQRwRCgTCezbkkT/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/iizb78OX////67N7hiDLjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkULwwpf////////uv5HjkkLjkD/jkD/jkD/jkD/jkD/jjz3kmEz559b////z07Pj
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/kkT9CKhItHAz1nES9eDQlFwqLWSfkkT/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/ijDj+/Pr//v734MnhiTPjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjz3uu4r////////vwJPjkkPjkD/jkD/jkD/jkD/jkD/jkD/h
+        hzD23cX////67N/jjz3jkD/jkD/jkD/jkD/jkD/jkD/jkD/kkD/YiTwAAACOWyjul0J+UCMhFQm8dzTn
+        kkDjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/ijjvopmb//fz//fzwxJniizfjkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjjztuIX////////wwpfkk0PjkD/jkD/j
+        kD/jkD/jkD/jkD/hijTyzaj+/fv////klUfjkD/jkD/jkD/jkD/jkD/jkD/jkD/nkkCWXykQCgT2nETI
+        fzcuHQxuRh7jkD/kkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/iijX12Lz//v7++vbklUnjjz3jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/ijjzst4P////////w
+        xZvkk0TjkD/jkD/jkD/jkD/jkD/jkD/jjjzmm1L88+r////uwJPijjvjkD/jkD/jkD/jkD/jkD/jkD/u
+        l0I1IQ4iFgm8dzR2SiEfEwi4dTPplEHjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/ghS378OT////3
+        3sfhijTjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/i
+        jjvstoH////////xyKHklEbjkD/jkD/jkD/jkD/jkD/jkD/jkD/hhzD23MP////67uLhiTPjkD/jkD/j
+        kD/jkD/jkD/lkkDMgTkAAAAAAAARCwUFAwFdOxrok0DkkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/i
+        jjvopGH99/D////nol7jjz3jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/ijTvstH7////////yzajklUfjkD/jkD/jkD/jkD/jkD/jkD/jkD/jjjzmnVX+/fv+
+        /fznoFrjjzzjkD/jkD/jkD/jkD/kkD/biz23dDO2czO0cjK2dDLPgznmkkDjkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/hiDL338f////23MLijjvjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/ijjvrsHf//v7////z07LklknjkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/ijDfz0bD////5693hiDLjkD/jkD/jkD/jkD/jkD/jkD/lkT/lkT/lkT/lkT/kkT/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jjjzmm1L77uH////nn1njkD7jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjjzool756Nj////12r7ll0vjkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/ijz3////9+PTmn1rjjjzjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/hiDL12b3////vwpbjkUHjkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD7jkUHyzar////4
+        483lmU/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjz3pqGn////77+ThjDjjkD7jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/ijTvpqWv77+T+/vzlmU7jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/iizbvwZT////6697mm1LjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjjz01bj67N7rsXji
+        jDnjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/ijjzxyaP+
+        /fzno1/jjz3jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/ijDnstX/9+fX++vfmnFTjkD7jkD/jkD/ijTvjjzzjkD/jkD/jkD/jkD/jkD/j
+        kD/iizbklUfklUnjjz7jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkkPklEfjkkLjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjz3kl0r338f////qrnTjjz3jkD/jkD/wwpbqrXLijTrj
+        kD/jkD/jkD/jkD/jkD/jkD/jjz3jjz7jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jjz7jjz3jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/iijXstoH+/Pr67eDnoV7hiTTx
+        yKD////128HhiTLjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jjz7jkUHw
+        xZv////67N7228D//v7////23cThiDLjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jjz3klEXrs3z45dL////////89/DwxZviizbjkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD7jkUHll0vmm1Hmm1PlmU/klEbjkD7jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/j
+        kD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD/jkD8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+</value>
+  </data>
+</root>

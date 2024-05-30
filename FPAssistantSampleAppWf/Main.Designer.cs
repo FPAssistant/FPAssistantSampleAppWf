@@ -46,6 +46,8 @@
             helpToolStripMenuItem = new ToolStripMenuItem();
             AboutToolStripMenuItem = new ToolStripMenuItem();
             LinkLabelFpassistantSdkHome = new LinkLabel();
+            nOTAMToolStripMenuItem = new ToolStripMenuItem();
+            decodeToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -60,7 +62,7 @@
             // 
             // GeneralToolStripMenuItem
             // 
-            GeneralToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { conversionsToolStripMenuItem, airSpeedIndicatedToTrueToolStripMenuItem });
+            GeneralToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { conversionsToolStripMenuItem, airSpeedIndicatedToTrueToolStripMenuItem, nOTAMToolStripMenuItem });
             GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem";
             GeneralToolStripMenuItem.Size = new Size(46, 20);
             GeneralToolStripMenuItem.Text = "Tools";
@@ -89,7 +91,7 @@
             // BasicILSToolStripMenuItem
             // 
             BasicILSToolStripMenuItem.Name = "BasicILSToolStripMenuItem";
-            BasicILSToolStripMenuItem.Size = new Size(119, 22);
+            BasicILSToolStripMenuItem.Size = new Size(180, 22);
             BasicILSToolStripMenuItem.Text = "Basic ILS";
             BasicILSToolStripMenuItem.Click += BasicILSToolStripMenuItem_Click;
             // 
@@ -117,14 +119,14 @@
             // distanceToolStripMenuItem
             // 
             distanceToolStripMenuItem.Name = "distanceToolStripMenuItem";
-            distanceToolStripMenuItem.Size = new Size(134, 22);
+            distanceToolStripMenuItem.Size = new Size(180, 22);
             distanceToolStripMenuItem.Text = "Distance";
             distanceToolStripMenuItem.Click += DistanceToolStripMenuItem_Click;
             // 
             // destinationToolStripMenuItem
             // 
             destinationToolStripMenuItem.Name = "destinationToolStripMenuItem";
-            destinationToolStripMenuItem.Size = new Size(134, 22);
+            destinationToolStripMenuItem.Size = new Size(180, 22);
             destinationToolStripMenuItem.Text = "Destination";
             destinationToolStripMenuItem.Click += DestinationToolStripMenuItem_Click;
             // 
@@ -173,6 +175,20 @@
             LinkLabelFpassistantSdkHome.Text = "FPAssistant Suite SDK website";
             LinkLabelFpassistantSdkHome.LinkClicked += LinkLabelFpassistantSdkHome_LinkClicked;
             // 
+            // nOTAMToolStripMenuItem
+            // 
+            nOTAMToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { decodeToolStripMenuItem });
+            nOTAMToolStripMenuItem.Name = "nOTAMToolStripMenuItem";
+            nOTAMToolStripMenuItem.Size = new Size(223, 22);
+            nOTAMToolStripMenuItem.Text = "NOTAM";
+            // 
+            // decodeToolStripMenuItem
+            // 
+            decodeToolStripMenuItem.Name = "decodeToolStripMenuItem";
+            decodeToolStripMenuItem.Size = new Size(180, 22);
+            decodeToolStripMenuItem.Text = "Decode";
+            decodeToolStripMenuItem.Click += DecodeToolStripMenuItem_Click;
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -209,5 +225,7 @@
         private ToolStripMenuItem intersectionToolStripMenuItem;
         private LinkLabel LinkLabelFpassistantSdkHome;
         private ToolStripMenuItem geoCoordinateToolStripMenuItem;
+        private ToolStripMenuItem nOTAMToolStripMenuItem;
+        private ToolStripMenuItem decodeToolStripMenuItem;
     }
 }

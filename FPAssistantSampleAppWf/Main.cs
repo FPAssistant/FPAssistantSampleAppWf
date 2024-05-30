@@ -22,7 +22,7 @@ namespace FPAssistantSampleAppWf
                 TopMost = true,
                 ShowInTaskbar = false
             };
-            splashScreenForm.Show();    
+            splashScreenForm.Show();
 #if (DEBUG)
             System.Threading.Thread.Sleep(500);
 #else
@@ -77,9 +77,16 @@ namespace FPAssistantSampleAppWf
 
         private void GreatCircleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GreatCircleForm greatCircleForm = new();    
-            greatCircleForm.Show(); 
+            GreatCircleForm greatCircleForm = new();
+            greatCircleForm.Show();
         }
+
+        private void DecodeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NotamDecodeForm notamDecodeForm = new();
+            notamDecodeForm.Show();
+        }
+
         #endregion
 
         private void LinkLabelFpassistantSdkHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -94,5 +101,6 @@ namespace FPAssistantSampleAppWf
                 MessageBox.Show(Program.AppCantOpenUrlLink, Program.AppMessageBoxCaption);
             }
         }
+
     }
 }
