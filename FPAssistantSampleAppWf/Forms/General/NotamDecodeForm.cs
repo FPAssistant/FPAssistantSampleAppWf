@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FpAssistantCore.General;
+using FpAssistantCore.GeneralAviation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,22 @@ namespace FPAssistantSampleAppWf.Forms.General
         public NotamDecodeForm()
         {
             InitializeComponent();
+
+            TextBoxNotamMessage.Text = "Z1234/06 NOTAMR A1212/06\r\nQ)EGTT/QMXLC/IV/NBO/A/111/999/5129N00028W321\r\nA)EGLL\r\nB)0609050500\r\nC)0704300500\r\nE)DUE WIP TWY B SOUTH CLSD BTN 'F' AND 'R'. TWY 'R' CLSD BTN 'A' AND 'B' AND DIVERTED VIA NEW GREEN CL AND BLUE EDGE LGT. CTN ADZ\r\nF)Lower\r\nG)Upper";
+
+        }
+
+        private void ButtonDecodeNotam_Click(object sender, EventArgs e)
+        {
+            Notam notam = new(TextBoxNotamMessage.Text);
+
+            if (notam.IsIcaoFormat != true)
+            {
+                MessageBox.Show("Unable to find a valid NOTAM series letter!", "FPAssistant Warning");
+            }
+
+            TextBoxSeriesIdentifier.Text= notam.SeriesIdentifier;
+            TextBoxSeriesIdentifierLetter.Text = notam.Series.ToString();
         }
     }
 }
