@@ -32,7 +32,8 @@ namespace FPAssistantSampleAppWf.Forms.General
             }
 
             TextBoxSeriesIdentifier.Text= notam.SeriesIdentifier;
-            TextBoxSeriesIdentifierLetter.Text = notam.Series.ToString();
+            TextBoxSeriesIdentifierLetter.Text = notam.Series.ToString() + "-" + notam.Series.GetDescription();
+            TextBoxIcaoNotamType.Text = notam.NotamType.ToString() + "-" + notam.NotamType.GetDescription();
         }
     }
 }

@@ -34,8 +34,10 @@
             ButtonDecodeNotam = new Button();
             LabelSeriesIdentifier = new Label();
             TextBoxSeriesIdentifier = new TextBox();
-            label1 = new Label();
+            LabelSeriesIdentifierLetter = new Label();
             TextBoxSeriesIdentifierLetter = new TextBox();
+            LabelIcaoNotamType = new Label();
+            TextBoxIcaoNotamType = new TextBox();
             SuspendLayout();
             // 
             // LabelNotemMessage
@@ -82,30 +84,49 @@
             TextBoxSeriesIdentifier.Size = new Size(138, 23);
             TextBoxSeriesIdentifier.TabIndex = 4;
             // 
-            // label1
+            // LabelSeriesIdentifierLetter
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 122);
-            label1.Name = "label1";
-            label1.Size = new Size(120, 15);
-            label1.TabIndex = 5;
-            label1.Text = "Series Identifier Letter";
+            LabelSeriesIdentifierLetter.AutoSize = true;
+            LabelSeriesIdentifierLetter.Location = new Point(12, 122);
+            LabelSeriesIdentifierLetter.Name = "LabelSeriesIdentifierLetter";
+            LabelSeriesIdentifierLetter.Size = new Size(120, 15);
+            LabelSeriesIdentifierLetter.TabIndex = 5;
+            LabelSeriesIdentifierLetter.Text = "Series Identifier Letter";
             // 
             // TextBoxSeriesIdentifierLetter
             // 
             TextBoxSeriesIdentifierLetter.Location = new Point(258, 119);
             TextBoxSeriesIdentifierLetter.Name = "TextBoxSeriesIdentifierLetter";
             TextBoxSeriesIdentifierLetter.ReadOnly = true;
-            TextBoxSeriesIdentifierLetter.Size = new Size(100, 23);
+            TextBoxSeriesIdentifierLetter.Size = new Size(357, 23);
             TextBoxSeriesIdentifierLetter.TabIndex = 6;
+            // 
+            // LabelIcaoNotamType
+            // 
+            LabelIcaoNotamType.AutoSize = true;
+            LabelIcaoNotamType.Location = new Point(12, 157);
+            LabelIcaoNotamType.Name = "LabelIcaoNotamType";
+            LabelIcaoNotamType.Size = new Size(106, 15);
+            LabelIcaoNotamType.TabIndex = 7;
+            LabelIcaoNotamType.Text = "ICAO NOTAM Type";
+            // 
+            // TextBoxIcaoNotamType
+            // 
+            TextBoxIcaoNotamType.Location = new Point(258, 154);
+            TextBoxIcaoNotamType.Name = "TextBoxIcaoNotamType";
+            TextBoxIcaoNotamType.ReadOnly = true;
+            TextBoxIcaoNotamType.Size = new Size(357, 23);
+            TextBoxIcaoNotamType.TabIndex = 8;
             // 
             // NotamDecodeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(640, 399);
+            Controls.Add(TextBoxIcaoNotamType);
+            Controls.Add(LabelIcaoNotamType);
             Controls.Add(TextBoxSeriesIdentifierLetter);
-            Controls.Add(label1);
+            Controls.Add(LabelSeriesIdentifierLetter);
             Controls.Add(TextBoxSeriesIdentifier);
             Controls.Add(LabelSeriesIdentifier);
             Controls.Add(ButtonDecodeNotam);
@@ -125,7 +146,9 @@
         private Button ButtonDecodeNotam;
         private Label LabelSeriesIdentifier;
         private TextBox TextBoxSeriesIdentifier;
-        private Label label1;
+        private Label LabelSeriesIdentifierLetter;
         private TextBox TextBoxSeriesIdentifierLetter;
+        private Label LabelIcaoNotamType;
+        private TextBox TextBoxIcaoNotamType;
     }
 }
