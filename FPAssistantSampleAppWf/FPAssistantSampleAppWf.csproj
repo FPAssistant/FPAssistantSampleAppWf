@@ -28,6 +28,7 @@
   <ItemGroup>
     <PackageReference Include="FpAssistantCoreScl" Version="2024.12.16.1" />
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2903.40" />
+    <PackageReference Include="System.Speech" Version="9.0.1" />
   </ItemGroup>
 
   <ItemGroup>

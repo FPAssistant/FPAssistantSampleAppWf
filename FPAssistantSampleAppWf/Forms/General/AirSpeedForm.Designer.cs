@@ -115,6 +115,7 @@
             TextBoxIas.Text = "250";
             ToolTipAirSpeed.SetToolTip(TextBoxIas, "Enter Indicated Air Speed");
             TextBoxIas.TextChanged += TextBox_TextChanged;
+            TextBoxIas.Leave += TextBoxIas_Leave;
             // 
             // TextBoxAltitude
             // 
@@ -125,6 +126,7 @@
             TextBoxAltitude.Text = "0";
             ToolTipAirSpeed.SetToolTip(TextBoxAltitude, "Enter Altitude");
             TextBoxAltitude.TextChanged += TextBox_TextChanged;
+            TextBoxAltitude.Leave += TextBoxAltitude_Leave;
             // 
             // TextBoxIsa
             // 
@@ -135,6 +137,7 @@
             TextBoxIsa.Text = "15";
             ToolTipAirSpeed.SetToolTip(TextBoxIsa, "Enter ISA");
             TextBoxIsa.TextChanged += TextBox_TextChanged;
+            TextBoxIsa.Leave += TextBoxIsa_Leave;
             // 
             // TextBoxK
             // 

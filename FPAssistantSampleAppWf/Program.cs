@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Speech.Synthesis;
 
 namespace FPAssistantSampleAppWf
 {
@@ -31,5 +32,7 @@ namespace FPAssistantSampleAppWf
 
         static public readonly string AppLatitudeFormat = "00.000000000000000";
         static public readonly string AppLongitudeFormat = "000.000000000000000";
+
+        static public SpeechSynthesizer speechSynthesizer = new SpeechSynthesizer();
     }
 }
