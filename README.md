@@ -24,3 +24,7 @@ The FPAssistant Suite SDK available to license for your own aviation software de
 *Updates*
 Added GeoCoordinate form to show how geo-coordinate struct is used
 2023.11.23.1 - .NET 8.0 / Geodetic distance between two coordinate using FAA algorithm.
+
+Example of a ICAO Basic ILS construction shown in the Map Window.
+![Screenshot 2025-02-03 102759](https://github.com/user-attachments/assets/56dd2f4f-dd2d-45ae-b40c-54e1bb5e8138)
+
