@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows10.0.18362.0</TargetFramework>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -27,8 +27,8 @@
 
   <ItemGroup>
     <PackageReference Include="FpAssistantCoreScl" Version="2025.6.27.1" />
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3296.44" />
-    <PackageReference Include="System.Speech" Version="9.0.6" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3405.78" />
+    <PackageReference Include="System.Speech" Version="9.0.8" />
   </ItemGroup>
 
   <ItemGroup>
