@@ -1,5 +1,4 @@
-﻿using FpAssistantCore.General;
-using FpAssistantCore.GeneralAviation;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using FpAssistantCore.General;
+using FpAssistantCore.GeneralAviation;
+
 namespace FPAssistantSampleAppWf.Forms.General
 {
     public partial class NotamDecodeForm : Form
@@ -18,7 +20,7 @@ namespace FPAssistantSampleAppWf.Forms.General
         {
             InitializeComponent();
 
-            TextBoxNotamMessage.Text = "Z1234/06 NOTAMR A1212/06\r\nQ)EGTT/QMXLC/IV/NBO/A/111/999/5129N00028W321\r\nA)EGLL\r\nB)0609050500\r\nC)0704300500\r\nE)DUE WIP TWY B SOUTH CLSD BTN 'F' AND 'R'. TWY 'R' CLSD BTN 'A' AND 'B' AND DIVERTED VIA NEW GREEN CL AND BLUE EDGE LGT. CTN ADZ\r\nF)Lower\r\nG)Upper";
+            TextBoxNotamMessage.Text = "Z1234/06 NOTAMR A1212/06\r\nQ)EGTT/QMXLC/IV/NBO/A/111/999/5129N00028W321\r\nA)EGLL\r\nB)0609050500\r\nC)0704300500\r\nE)DUE WIP TWY B SOUTH CLSD BTN 'F' AND 'R'. TWY 'R' CLSD BTN 'A' AND 'B' AND DIVERTED VIA NEW GREEN CL AND BLUE EDGE LGT. CTN ADZ\r\nF)0.0\r\nG)999.99";
 
         }
 
